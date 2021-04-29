@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>404</title>
+    <style>
+        * {
+            text-align: center;
+            font-family: '微软雅黑', 'ukij tuz tom', 'alkatip', "Microsoft Uighur", serif;
+            font-weight: 100;
+            color: #7a7a7a;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .uyghur-text {
+            direction: rtl;
+        }
+
+        h1, h1 * {
+            color: #ff4e28;
+            font-family: "Arial Black", serif;
+            font-weight: 500;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            font-size: 5em;
+        }
+
+        h2 {
+            font-size: 1.1em;
+            font-weight: 500;
+            line-height: 2;
+        }
+
+        .service {
+            width: 260px;
+            height: 200px;
+            border: 4px solid #fff;
+            margin:auto;
+            position: relative;
+            color: #ccc;
+            overflow: hidden;
+
+            text-shadow: 3px 3px 0 #02B875;
+
+        }
+
+        .service * {
+            color: #fff;
+        }
+
+        .icon-big {
+            position: absolute;
+            left: 0;
+            top: -20px;
+            width: 180px;
+            height: 180px;
+        }
+
+        .icon-big i {
+            font-size: 220px;
+        }
+
+        .icon-small {
+            position: absolute;
+            right: 15px;
+            top: 35px;
+            width: 90px;
+            height: 90px;
+            font-size: 60px;
+        }
+
+        .icon-normal {
+            position: absolute;
+            left: 68%;
+            bottom: 42px;
+            font-size: 120px;
+            width: 90px;
+            height: 90px;
+        }
+
+        .job {
+            background-color: #02B875;
+            padding: 60px;
+        }
+        hr{
+            display: block;
+            border: none;
+            margin: 15px 0;
+            border-bottom: 2px solid #ccc;
+
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="div job">
+    <div class="service">
+        <div class="icon-big"><i class="fa fa-cog fa-spin"></i></div>
+        <div class="icon-small"><i class="fa fa-cog fa-spin"></i></div>
+        <div class="icon-normal"><i class="fa fa-cog fa-spin"></i></div>
+
+    </div>
+</div>
+
+
+<div style="background: #fff;padding: 20px;margin-bottom: 15px;">
+    <h1><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> 500</h1>
+</div>
+<h2 class="uyghur-text"> تېخنىكىلىق ئاسىراش مەشغۇلاتى ئىلىپ بىرىلىۋاتىدۇ </h2>
+<h2>该站点正在离线维护升级中 ，敬请期待</h2>
+
+
+
+
+<code style="display: block;text-align: center; direction: ltr;    color: #4582EC; font-weight: 500; margin-top: 15px;"
+      id="curent_web_url"></code>
+
+
+</body>
+
+<script type="text/javascript">
+    var curent_url = window.location.href;
+    curent_url = curent_url.substring(7);
+    document.getElementById('curent_web_url').innerHTML = curent_url;
+</script>
+
+</html>
